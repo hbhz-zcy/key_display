@@ -1,0 +1,10 @@
+Aimed to show moving of mouse and keying,designed such issue.  
+With the help of deepseek.  
+Code on python,and have packaged to exe file.  
+You may compile in other system environment.  
+
+## How to use
+Need config.json.  
+There have been a example established,users may take reference and revision.  
+specially,if not use log_file,key_display.log will be produced in dir of exe.  
+specially,you may everytimely remember "safety_key": "f12".  
