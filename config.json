@@ -1,0 +1,126 @@
+{
+  "window": {
+    "width": 350,
+    "height": 170,
+    "opacity": 1,
+    "title": "Key",
+    "offset_x": 0,
+    "offset_y": 30,
+    "background_color": "#ffffff"
+  },
+  "//log_file": "logs/key_display.log",
+  "font_size": 8,
+  "safety_key": "f12",
+  "mouse_indicator": {
+    "radius": 2,
+    "color": "#ff0000",
+    "range": [140, 31, 192, 108],
+    "range_bg_color": "#eeeeff",
+    "scale_x": 0.1,
+    "scale_y": 0.1,
+    "//": "1920*1080"
+  },
+  "keys": [
+    {
+      "name": "w",
+      "display_name": "W",
+      "rect": [50, 20, 30, 30],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "s",
+      "display_name": "S",
+      "rect": [50, 55, 30, 30],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "a",
+      "display_name": "A",
+      "rect": [15, 55, 30, 30],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "d",
+      "display_name": "D",
+      "rect": [85, 55, 30, 30],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "q",
+      "display_name": "Q",
+      "rect": [25, 25, 20, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "e",
+      "display_name": "E",
+      "rect": [85, 25, 20, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "shift",
+      "display_name": "shift",
+      "rect": [15, 95, 35, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "ctrl_l",
+      "display_name": "ctrl",
+      "rect": [15, 120, 25, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "space",
+      "display_name": "space",
+      "rect": [45, 120, 80, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    }
+  ],
+  "mouse_keys": [
+    {
+      "name": "left",
+      "display_name": "L",
+      "rect": [60, 95, 20, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    },
+    {
+      "name": "right",
+      "display_name": "R",
+      "rect": [90, 95, 20, 20],
+      "normal_bg": "#ccccff",
+      "normal_fg": "#ffffff",
+      "pressed_bg": "#aaaadd",
+      "pressed_fg": "#ffffff"
+    }
+  ]
+}
