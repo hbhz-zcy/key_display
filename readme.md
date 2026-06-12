@@ -6,5 +6,5 @@ You may compile in other system environment.
 ## How to use
 Need config.json.  
 There have been a example established,users may take reference and revision.  
-specially,if not use log_file,key_display.log will be produced in dir of exe.  
-specially,you may everytimely remember "safety_key": "f12".  
+Specially,if not use log_file,key_display.log will be produced in dir of exe.  
+Specially,you may everytimely remember "safety_key": "f12".  
