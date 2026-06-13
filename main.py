@@ -1,3 +1,4 @@
+# pyinstaller --onefile --noconsole --name "key_display" main.py
 import json
 import tkinter as tk
 from tkinter import Canvas
@@ -73,14 +74,16 @@ class KeyMouseDisplay:
         self.root.resizable(False, False)
         self.root.attributes('-alpha', wcfg.get('opacity', 0.9))
         self.root.overrideredirect(True)
-        self.root.attributes('-topmost', True)
-
+        # 根据配置决定是否置顶
+        always_on_top = wcfg.get('always_on_top', True)
+        self.root.attributes('-topmost', always_on_top)
+    
         self.root.update_idletasks()
         self.base = (self.root.winfo_x(), self.root.winfo_y())
 
         bg_color = wcfg.get('background_color', '#1a1a1a')
         self.canvas = Canvas(self.root, width=wcfg['width'], height=wcfg['height'],
-                             bg=bg_color, highlightthickness=0)
+                         bg=bg_color, highlightthickness=0)
         self.canvas.pack(fill=tk.BOTH, expand=True)
 
         # 绘制鼠标范围背景矩形
@@ -154,17 +157,18 @@ class KeyMouseDisplay:
     def handle_safety(self, name):
         if name == self.cfg.get('safety_key', 'f12').lower():
             self.paused = not self.paused
+            always_on_top = self.cfg['window'].get('always_on_top', True)
             if self.paused:
                 tx, ty = self.base[0] - self.offset[0], self.base[1] - self.offset[1]
                 self.root.overrideredirect(False)
-                self.root.attributes('-topmost', False)
+                self.root.attributes('-topmost', always_on_top)
                 self.root.geometry(f"+{tx}+{ty}")
                 logging.info(f"【拖动模式】窗口移至 ({tx}, {ty})")
             else:
                 cx, cy = self.root.winfo_x(), self.root.winfo_y()
                 self.base = (cx + self.offset[0], cy + self.offset[1])
                 self.root.overrideredirect(True)
-                self.root.attributes('-topmost', True)
+                self.root.attributes('-topmost', always_on_top)
                 self.root.geometry(f"+{self.base[0]}+{self.base[1]}")
                 logging.info(f"【锁定模式】窗口移至 ({self.base[0]}, {self.base[1]})")
             self.root.update()
