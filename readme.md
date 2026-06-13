@@ -10,4 +10,5 @@ Specially,if not use log_file,key_display.log will be produced in dir of exe.
 Specially,you may everytimely remember "safety_key": "f12".  
 
 ---
-There's a bug if keying safety_key continuously,results finally moving to the direction of offset(x,y).But not planned to fix.  
+v 0.2 config.json could choose whether always on the top or not.  
+v 0.1 There's a bug if keying safety_key continuously,results finally moving to the direction of offset(x,y).But not planned to fix.  
